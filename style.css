@@ -1,0 +1,124 @@
+body{
+    background-color: black;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    justify-content: center;
+    width: 100vh;
+    height:100vh;
+    overflow: hidden;
+}
+
+.card
+{
+    position: relative;
+    left:300px;
+    display:grid; 
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px; /* top right bottom left */
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow:5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+    cursor: pointer;
+    transition: ease;
+}
+.image
+{
+    grid-area:image;
+    background: url(pic1.jpg);
+    background-size: cover;
+    border-radius: 18px;
+
+}
+.text
+{
+    grid-area:text;
+    margin:25px;
+}
+.text .date
+{
+    color:red;
+    font-size: 20px;
+}
+.text p{
+    font-size: 12px;
+}
+.stats
+{
+    grid-area:stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 18px;
+    background-color:purple;
+}
+.stats .stat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color:white;
+}
+
+.card:hover{
+    transform: scale(1.2);
+
+}
+.card2
+{
+    display:grid; 
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow:5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+    cursor: pointer;
+    transition: ease;
+    position: relative;
+    right:-350px;
+    justify-content: right;
+    color:black;
+    top:-200;
+}
+.image2
+{
+    background: url(pic2.jpg);
+    grid-area:image;
+    background-size: cover;
+    border-radius: 18px;
+}
+.card2:hover{
+    transform: scale(1.2);
+}
+.card3
+{
+    display:grid; 
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow:5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+    cursor: pointer;
+    transition: ease;
+    position: relative;
+    right:-400px;
+    justify-content: right;
+    color:black;
+    top:-200;
+}
+.card3:hover{
+    transform: scale(1.2);
+}
+.image3
+{
+    background: url(pic3.jpg);
+    grid-area:image;
+    background-size: cover;
+    border-radius: 18px;
+}
